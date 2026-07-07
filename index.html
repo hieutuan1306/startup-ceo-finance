@@ -11,6 +11,10 @@
     *{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,sans-serif;background:radial-gradient(circle at top left,#dbeafe 0,#f4f7fb 36%,#fff 100%);color:var(--ink)}
     .wrap{max-width:1120px;margin:auto;padding:26px}.nav{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:28px}.brand{display:flex;gap:12px;align-items:center}.logo{width:50px;height:50px;border-radius:16px;background:linear-gradient(135deg,var(--navy),var(--blue));display:grid;place-items:center;color:#fff;font-size:25px;font-weight:900;box-shadow:var(--shadow)}
     h1{font-size:52px;letter-spacing:-1.8px;line-height:1.02;margin:0 0 18px}.sub{color:var(--muted);line-height:1.65;font-size:18px;max-width:760px}.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:28px;align-items:center;padding:34px 0}.badge{display:inline-flex;gap:8px;align-items:center;background:#eff6ff;color:#1d4ed8;border:1px solid #bfdbfe;border-radius:999px;padding:9px 13px;font-weight:800;font-size:13px;margin-bottom:18px}.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border:0;border-radius:16px;padding:15px 20px;font-weight:900;color:#fff;background:var(--blue);box-shadow:0 14px 30px rgba(37,99,235,.24)}.btn.secondary{background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:none}.btn.gold{background:var(--gold);color:#111827}.panel{background:rgba(255,255,255,.82);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:30px;padding:22px;box-shadow:var(--shadow)}.screen{background:linear-gradient(135deg,#0b1f3a,#1d4ed8);border-radius:24px;color:#fff;padding:22px;min-height:360px;position:relative;overflow:hidden}.screen:after{content:"";position:absolute;width:230px;height:230px;border-radius:50%;background:rgba(255,255,255,.09);right:-70px;top:-70px}.mini{position:relative;z-index:1}.mini h3{font-size:28px;margin:0 0 10px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}.card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px;box-shadow:0 10px 30px rgba(16,32,51,.07)}.card b{font-size:28px}.section{margin:26px 0}.section h2{font-size:32px;margin:0 0 14px}.steps{counter-reset:item;display:grid;gap:12px}.step{counter-increment:item;background:#fff;border:1px solid var(--line);border-radius:18px;padding:15px}.step:before{content:counter(item);display:inline-grid;place-items:center;width:26px;height:26px;margin-right:9px;border-radius:50%;background:#eff6ff;color:#1d4ed8;font-weight:900}.footer{text-align:center;color:var(--muted);font-size:13px;padding:30px}.note{font-size:13px;color:var(--muted);line-height:1.55}.qr{display:flex;gap:16px;align-items:center;margin-top:16px;padding:14px;border:1px dashed #bfd1ea;border-radius:20px;background:#f8fafc}.qrbox{width:98px;height:98px;border-radius:16px;background:#fff;display:grid;place-items:center;border:1px solid var(--line);font-size:12px;text-align:center;color:var(--muted);padding:8px}
+
+    .author-card{margin:22px 0 0;background:linear-gradient(135deg,rgba(11,31,58,.96),rgba(29,78,216,.88));color:#fff;border-radius:24px;padding:22px;border:1px solid rgba(255,255,255,.18);box-shadow:0 18px 45px rgba(11,31,58,.22)}
+    .author-card .label{display:inline-flex;align-items:center;gap:8px;background:rgba(245,158,11,.16);color:#fde68a;border:1px solid rgba(245,158,11,.38);border-radius:999px;padding:7px 11px;font-size:12px;font-weight:900;margin-bottom:12px}
+    .author-card h3{font-size:25px;margin:0 0 6px;letter-spacing:-.4px}.author-card p{margin:0}.author-title{color:#dbeafe;font-weight:700;line-height:1.55}.author-desc{color:#eaf2ff;line-height:1.65;margin-top:12px!important;font-size:14px}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.chip{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:8px 10px;font-size:12px;font-weight:800}.recognition{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,.18);display:flex;gap:9px;flex-wrap:wrap}.recognition span{font-size:12px;background:rgba(255,255,255,.92);color:#0b1f3a;border-radius:999px;padding:7px 10px;font-weight:900}
     @media(max-width:860px){.hero,.cards{grid-template-columns:1fr}h1{font-size:38px}.nav{align-items:flex-start;flex-direction:column}}
   </style>
 </head>
@@ -26,6 +30,24 @@
         <div class="badge">Offline HTML App · Không cần server · Dành cho CEO startup</div>
         <h1>Học tài chính kế toán qua câu hỏi, case study và mini game.</h1>
         <p class="sub">Một file HTML độc lập giúp CEO/founder hiểu P&amp;L, cash flow, runway, unit economics, gọi vốn, thuế và kiểm soát chi phí theo cách thực tế, dễ học và có thể dùng offline.</p>
+        <div class="author-card">
+          <div class="label">Built from CFO Advisory experience</div>
+          <h3>Created by Ne Hieu Tuan, ACCA, MBA</h3>
+          <p class="author-title">CFO &amp; Finance Transformation Advisor</p>
+          <p class="author-desc">Ứng dụng được xây dựng từ kinh nghiệm tư vấn CFO, chuyển đổi tài chính, chuẩn hóa kế toán, thiết lập hệ thống tài chính và đồng hành cùng doanh nghiệp trong giai đoạn tăng trưởng.</p>
+          <div class="chips">
+            <span class="chip">CFO Advisory</span>
+            <span class="chip">Finance Transformation</span>
+            <span class="chip">Accounting System</span>
+            <span class="chip">Cash Flow &amp; KPI</span>
+            <span class="chip">Startup Finance</span>
+          </div>
+          <div class="recognition">
+            <span>Featured: CEO Insights Asia</span>
+            <span>Featured: CFO Insights</span>
+            <span>ACCA</span>
+          </div>
+        </div>
         <div class="cta">
           <a class="btn" href="./startup_ceo_finance_academy.html" download>Download Offline App</a>
           <a class="btn secondary" href="./startup_ceo_finance_academy.html" target="_blank">Xem bản demo</a>
@@ -42,7 +64,18 @@
         <div class="card"><b>P&amp;L</b><p class="note">Doanh thu, COGS, gross margin, EBITDA, profit.</p></div>
         <div class="card"><b>Startup Metrics</b><p class="note">CAC, LTV, payback, pricing, unit economics.</p></div>
       </div>
-        </section>
+    </section>
+
+    <section class="section">
+      <h2>Cách đưa lên GitHub Pages</h2>
+      <div class="steps">
+        <div class="step">Tạo repository tên <b>startup-ceo-finance</b> trên GitHub account <b>hieutuan1306</b>.</div>
+        <div class="step">Upload toàn bộ file trong bộ thư mục này lên repository.</div>
+        <div class="step">Vào <b>Settings → Pages</b>, chọn <b>Deploy from a branch</b>, branch <b>main</b>, folder <b>/root</b>.</div>
+        <div class="step">Sau khi GitHub build xong, link sẽ là <b>https://hieutuan1306.github.io/startup-ceo-finance/</b>.</div>
+      </div>
+      <div class="qr"><div class="qrbox">QR Donate<br>đã nằm trong app</div><div><b>Thông tin ủng hộ</b><p class="note">Vietcombank · 0511003830985 · Ne Hieu Tuan. QR chuyển khoản được đặt trong phần “Thư ngỏ” của app.</p></div></div>
+    </section>
 
     <div class="footer">© 2026 Ne Hieu Tuan. All rights reserved.</div>
   </div>
